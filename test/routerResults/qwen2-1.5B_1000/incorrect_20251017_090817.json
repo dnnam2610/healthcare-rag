@@ -1,0 +1,168 @@
+{
+  "timestamp": "2025-10-17T09:08:17.991615",
+  "total_incorrect": 27,
+  "samples": [
+    {
+      "query": "Một số lợi ích khác của việc thực hành chánh niệm ngoài việc giảm căng thẳng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể cho tôi biết thêm về Catbite?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Trọng lượng khuyến nghị của một quả bóng bowling dành cho người mới bắt đầu chơi bowling là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Dự đoán những ảnh hưởng của COVID-19 đối với nền kinh tế thế giới sau 3 đến 5 năm kể từ bây giờ.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể cho tôi biết thêm về vai trò của ong mật trong quá trình thụ phấn được không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chuyển đổi 2 ounce sang mililít.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng hợp bài viết “Cách giải phóng dung lượng ổ đĩa trên Windows 10”: https://www.howtogeek.com/125923/7-ways-to-free-up-hard-disk-space-on-windows-10/",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Kích thước MTU được khuyến nghị để tránh mất gói là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cáo có giao phối suốt đời hay chúng đổi bạn tình?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Làm cách nào tôi có thể tạo ảnh chụp mắt của con sâu? Tôi có cần thiết bị đặc biệt nào không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Làm thế nào một người có thể duy trì động lực tập thể dục ngay cả khi họ bắt đầu cảm thấy mệt mỏi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cách tốt nhất để khắc phục sự cố khi sử dụng CPU cao là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể giới thiệu một loại sữa chua khác để làm sinh tố cho những người không dung nạp lactose được không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đột biến có thể luôn có hại hay chúng cũng có thể có lợi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tại sao canxi clorua được sử dụng làm chất chống đóng băng trong ngành xây dựng?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chức năng của ty thể trong cơ thể con người là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số nguồn protein tốt cho người đang cố gắng xây dựng cơ bắp là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cơ thể chuyển hóa carbohydrate như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số sản phẩm điều trị ung thư phổ biến nhất của Novartis là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn đã thông tin. Nghe có vẻ như sẽ có rất nhiều hậu quả tiềm ẩn nếu Donald Trump quyết định tái tranh cử tổng thống vào năm 2024. Bạn nghĩ có khả năng ông ấy sẽ tranh cử hay còn quá sớm để nói chắc chắn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nêu 3 lợi ích của việc ăn chuối.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số chiến lược dài hạn mà ai đó có thể sử dụng để ngăn chặn cảm giác sợ hãi và lo lắng trước các kỳ thi trong tương lai là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số lợi ích của việc tập yoga để giảm căng thẳng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có nhất thiết phải luôn mang xe đến đại lý để bảo dưỡng hay tôi có thể mang xe đến bất kỳ thợ cơ khí nào không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Miêu tả mùi ở tiệm bánh",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sạc dự phòng AUKEY USB-C 30000mAh có được bảo hành không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ba lớp chính của mạng lưới thần kinh là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-11T22:32:24.817802",
+  "total_incorrect": 15,
+  "samples": [
+    {
+      "query": "Cảm ơn vì thông tin! Tôi nghĩ tôi sẽ thử leo núi Batur Sunrise Trekking. Bạn có biết chuyến đi thường bắt đầu lúc mấy giờ không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Dự đoán những ảnh hưởng của COVID-19 đối với nền kinh tế thế giới sau 3 đến 5 năm kể từ bây giờ.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đánh giá dịch vụ khách hàng do khách sạn nơi bạn lưu trú cung cấp theo thang điểm từ 1 đến 5 (1 là tệ nhất và 5 là tốt nhất): Kỳ nghỉ của tôi ở khách sạn Westwood thật tuyệt. Các nhân viên rất thân thiện và hữu ích. Các phòng luôn được giữ sạch sẽ. Tôi cũng được ăn sáng miễn phí.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng hợp bài viết “Cách giải phóng dung lượng ổ đĩa trên Windows 10”: https://www.howtogeek.com/125923/7-ways-to-free-up-hard-disk-space-on-windows-10/",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi có thể sử dụng bột cà ri đỏ thay vì bột cà ri trong công thức Súp cà ri dừa không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Các yêu cầu y tế để lấy bằng lái xe hạng 1 ở Canada là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn khuyên dùng loại nước sốt nào cho món gà nướng này?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi nên đi tuyến tàu điện ngầm nào để đến Ga Grand Central và lịch trình như thế nào? (Lưu ý: Đây là câu hỏi tiếp theo có liên quan đến câu trả lời trước đó về việc đi tàu điện ngầm như một lựa chọn cho phương tiện giao thông công cộng.)",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Viết lại câu sau một cách ngắn gọn hơn: “Con chó mà tôi nhìn thấy trong công viên, nó có màu đen.”: Con chó mà tôi nhìn thấy trong công viên, nó có màu đen.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Phân tích âm sắc của đầu vào nhất định: Nhiệm vụ này vô nghĩa và hoàn toàn không cần thiết.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chức năng của ty thể trong cơ thể con người là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Xóa đoạn văn 1000 từ không thuộc bài viết này: Toàn bộ bài viết",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Phân loại các loại trái cây sau đây thuộc loại có múi hoặc không có múi: Chuối",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số sản phẩm điều trị ung thư phổ biến nhất của Novartis là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn đã thông tin. Nghe có vẻ như sẽ có rất nhiều hậu quả tiềm ẩn nếu Donald Trump quyết định tái tranh cử tổng thống vào năm 2024. Bạn nghĩ có khả năng ông ấy sẽ tranh cử hay còn quá sớm để nói chắc chắn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}
