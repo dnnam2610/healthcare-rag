@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from typing import List, Dict, Any
 import numpy as np
@@ -60,8 +63,8 @@ if __name__ == '__main__':
         qdrant_api=QDRANT_API_KEY,
         qdrant_url=QDRANT_URL
     )
-    query = "tôi bị sổ mũi"
-    results = retriever.vector_search(query, limit=3)
+    query = "Tôi hay bị dau đầu vào ban đêm"
+    results = retriever.vector_search(query, limit=9)
 
     print("\n🔍 Search results:")
     for res in results:
