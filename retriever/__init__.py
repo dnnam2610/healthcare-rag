@@ -1,1 +1,1 @@
-from retriever.core import Retriever
+from retriever.topK import Retriever
