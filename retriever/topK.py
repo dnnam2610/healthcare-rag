@@ -65,8 +65,4 @@ if __name__ == '__main__':
     )
     query = "Tôi hay bị dau đầu vào ban đêm"
     results = retriever.vector_search(query, limit=9)
-
-    print("\n🔍 Search results:")
-    for res in results:
-        print(f"ID: {res['id']} | Category: {res['category']} | Score: {res['score']:.4f}")
-        print(f"Text: {res['content']}\n")
+    retriever.pprint(results)

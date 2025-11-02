@@ -6,8 +6,12 @@ from embedders import FlagBaseEmbedding, EmbeddingConfig
 from qdrant_client import QdrantClient, models
 from qdrant_client.http.models import Distance, VectorParams
 from config import EMBEDDING_MODEL_NAME, VECTOR_SIZE
+from datetime import datetime
 import chromadb
 import pymongo
+import json
+import os
+import csv
 
 class BaseRetriever(ABC):
     """Base class for all retriever implementations"""
@@ -142,7 +146,7 @@ class BaseRetriever(ABC):
         embedding = self.embedding_model.encode(text)
         return embedding.tolist()
 
-    def _raw_vector_search(self, user_query: str, limit: int = 100) -> List[Dict[str, Any]]:
+    def _raw_vector_search(self, user_query: str, limit: int = 100, return_embedding:bool=False) -> List[Dict[str, Any]]:
         """
         Perform raw vector search and return results with scores.
         This method fetches more results than needed for filtering.
@@ -160,16 +164,28 @@ class BaseRetriever(ABC):
             hits = self.client.search(
                 collection_name=self.qdrant_collection,
                 query_vector=query_embedding,
+                with_vectors=True,
                 limit=limit
             )
             results = []
-            for hit in hits:
-                results.append({
-                    'id': hit.id,
-                    'category': hit.payload['category'],
-                    'content': hit.payload['content'],
-                    'score': hit.score
-                })
+            if return_embedding:
+                for hit in hits:
+                    results.append({
+                        'id': hit.id,
+                        'category': hit.payload['category'],
+                        'content': hit.payload['content'],
+                        'score': hit.score,
+                        'embedding': hit.vector
+                    })
+            else:
+                for hit in hits:
+                    results.append({
+                        'id': hit.id,
+                        'category': hit.payload['category'],
+                        'content': hit.payload['content'],
+                        'score': hit.score,
+                        'embedding': None
+                    })
             return results
             
         elif self.type == 'mongodb':
@@ -236,4 +252,61 @@ class BaseRetriever(ABC):
         """Convert text to markdown format"""
         text = text.replace('•', '  *')
         return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
+    
+    @staticmethod
+    def pprint(candidates):
+        print("\n🔍 Search results:")
+        for candidate in candidates:
+            print(f"ID: {candidate['id']} | Category: {candidate['category']} | Score: {candidate['score']:.4f}")
+            print(f"Text: {candidate['content']}\n")
+    
+    @staticmethod
+    def save(candidates, path_dir: str, format: str = "json"):
+        """
+        Lưu danh sách kết quả tìm kiếm ra file trong thư mục chỉ định.
 
+        Args:
+            candidates (List[Dict]): Danh sách kết quả (phải có id, category, content, score)
+            path_dir (str): Thư mục lưu file (tự động tạo nếu chưa có)
+            format (str): Định dạng file ('json', 'txt', 'csv')
+        """
+        supported_formats = {"json", "txt", "csv"}
+        format = format.lower()
+
+        # 🔎 Kiểm tra định dạng hợp lệ
+        if format not in supported_formats:
+            print(f"⚠️ Unsupported format '{format}'. Supported formats are: {', '.join(supported_formats)}")
+            return
+
+        # Tạo thư mục nếu chưa tồn tại
+        os.makedirs(path_dir, exist_ok=True)
+
+        # 🕒 Tạo tên file theo thời gian
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        file_path = os.path.join(path_dir, f"results_{timestamp}.{format}")
+
+        print(f"💾 Saving results to: {file_path}")
+
+        try:
+            if format == "json":
+                with open(file_path, "w", encoding="utf-8") as f:
+                    json.dump(candidates, f, ensure_ascii=False, indent=4)
+
+            elif format == "txt":
+                with open(file_path, "w", encoding="utf-8") as f:
+                    for c in candidates:
+                        f.write(f"ID: {c['id']}\nCategory: {c['category']}\nScore: {c['score']:.4f}\n")
+                        f.write(f"Text: {c['content']}\n{'-'*60}\n")
+
+            elif format == "csv":
+                with open(file_path, "w", newline="", encoding="utf-8") as f:
+                    writer = csv.DictWriter(f, fieldnames=["id", "category", "score", "content"])
+                    writer.writeheader()
+                    writer.writerows(candidates)
+
+            print("✅ Save completed successfully.")
+            return file_path  # trả về đường dẫn để tiện dùng sau này
+
+        except Exception as e:
+            print(f"❌ Error saving file: {e}")
+            return None
