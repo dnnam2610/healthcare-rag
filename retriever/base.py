@@ -13,6 +13,27 @@ import json
 import os
 import csv
 
+from dataclasses import dataclass
+from typing import Optional, Any, List
+
+@dataclass
+class Candidate:
+    """Đại diện cho một kết quả truy vấn vector."""
+    id: Any
+    category: Optional[str]
+    content: str
+    score: float
+    embedding: Optional[List[float]] = None
+
+    def to_dict(self):
+        """Chuyển Candidate sang dict (dùng để lưu JSON/CSV)."""
+        return {
+            "id": self.id,
+            "category": self.category,
+            "content": self.content,
+            "score": self.score,
+        }
+
 class BaseRetriever(ABC):
     """Base class for all retriever implementations"""
     
@@ -58,7 +79,7 @@ class BaseRetriever(ABC):
             print(f"❌ MongoDB connection failed: {e}")
             raise
 
-    def _init_qdrant(self, api_key, url, embedding_name):
+    def _init_qdrant(self, api_key, url, embeddingName):
         """Initialize Qdrant connection"""
         self.qdrant_api = api_key
         self.qdrant_url = url
@@ -146,48 +167,59 @@ class BaseRetriever(ABC):
         embedding = self.embedding_model.encode(text)
         return embedding.tolist()
 
-    def _raw_vector_search(self, user_query: str, limit: int = 100, return_embedding:bool=False) -> List[Dict[str, Any]]:
+    def _raw_vector_search(self, user_query: str, limit: int = 100, return_embedding: bool = False) -> List[Candidate]:
         """
-        Perform raw vector search and return results with scores.
-        This method fetches more results than needed for filtering.
+        Perform raw vector search and return list of Candidate objects.
         """
         query_embedding = self.get_embedding(user_query)[0]
-        
+
         if query_embedding is None:
             return []
+
+        results: List[Candidate] = []
 
         if self.type == 'qdrant':
             if not self._collection_exists(self.qdrant_collection):
                 print(f"Collection {self.qdrant_collection} does not exist")
                 return []
-            
+
             hits = self.client.search(
                 collection_name=self.qdrant_collection,
                 query_vector=query_embedding,
                 with_vectors=True,
                 limit=limit
             )
-            results = []
-            if return_embedding:
-                for hit in hits:
-                    results.append({
-                        'id': hit.id,
-                        'category': hit.payload['category'],
-                        'content': hit.payload['content'],
-                        'score': hit.score,
-                        'embedding': hit.vector
-                    })
-            else:
-                for hit in hits:
-                    results.append({
-                        'id': hit.id,
-                        'category': hit.payload['category'],
-                        'content': hit.payload['content'],
-                        'score': hit.score,
-                        'embedding': None
-                    })
-            return results
-            
+
+            for hit in hits:
+                results.append(
+                    Candidate(
+                        id=hit.id,
+                        category=hit.payload.get('category'),
+                        content=hit.payload.get('content', ''),
+                        score=hit.score,
+                        embedding=hit.vector if return_embedding else None
+                    )
+                )
+
+        elif self.type == 'chromadb':
+            query_vector = self.get_embedding(user_query)
+            hits = self.chromadb_collection.query(
+                query_embeddings=[query_vector],
+                n_results=limit
+            )
+            for i in range(len(hits['ids'][0])):
+                distance = hits['distances'][0][i]
+                similarity = 1 - distance
+                results.append(
+                    Candidate(
+                        id=hits['ids'][0][i],
+                        category=None,
+                        content=hits['documents'][0][i],
+                        score=similarity,
+                        embedding=None
+                    )
+                )
+
         elif self.type == 'mongodb':
             vector_search_stage = {
                 "$vectorSearch": {
@@ -210,26 +242,19 @@ class BaseRetriever(ABC):
                 }
             }
             pipeline = [vector_search_stage, unset_stage, project_stage]
-            results = self.collection.aggregate(pipeline)
-            return list(results)
-            
-        else:  # chromadb
-            query_vector = self.get_embedding(user_query)
-            hits = self.chromadb_collection.query(
-                query_embeddings=[query_vector],
-                n_results=limit
-            )
-            results = []
-            for i in range(len(hits['ids'][0])):
-                distance = hits['distances'][0][i]
-                similarity = 1 - distance
-                result = {
-                    "_id": hits['ids'][0][i],
-                    "combined_information": hits['documents'][0][i],
-                    "score": similarity
-                }
-                results.append(result)
-            return results
+            mongo_results = self.collection.aggregate(pipeline)
+
+            for doc in mongo_results:
+                results.append(
+                    Candidate(
+                        id=doc["_id"],
+                        category=None,
+                        content=doc.get("title", ""),
+                        score=doc["score"],
+                    )
+                )
+
+        return results
 
     @abstractmethod
     def vector_search(self, user_query: str, limit: int = 4) -> List[Dict[str, Any]]:
@@ -254,59 +279,48 @@ class BaseRetriever(ABC):
         return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
     
     @staticmethod
-    def pprint(candidates):
+    def pprint(candidates: List[Candidate]):
         print("\n🔍 Search results:")
-        for candidate in candidates:
-            print(f"ID: {candidate['id']} | Category: {candidate['category']} | Score: {candidate['score']:.4f}")
-            print(f"Text: {candidate['content']}\n")
-    
-    @staticmethod
-    def save(candidates, path_dir: str, format: str = "json"):
-        """
-        Lưu danh sách kết quả tìm kiếm ra file trong thư mục chỉ định.
+        for c in candidates:
+            print(f"ID: {c.id} | Category: {c.category} | Score: {c.score:.4f}")
+            print(f"Text: {c.content}\n")
 
-        Args:
-            candidates (List[Dict]): Danh sách kết quả (phải có id, category, content, score)
-            path_dir (str): Thư mục lưu file (tự động tạo nếu chưa có)
-            format (str): Định dạng file ('json', 'txt', 'csv')
-        """
+    @staticmethod
+    def save(candidates: List[Candidate], path_dir: str, format: str = "json"):
         supported_formats = {"json", "txt", "csv"}
         format = format.lower()
 
-        # 🔎 Kiểm tra định dạng hợp lệ
         if format not in supported_formats:
             print(f"⚠️ Unsupported format '{format}'. Supported formats are: {', '.join(supported_formats)}")
             return
 
-        # Tạo thư mục nếu chưa tồn tại
         os.makedirs(path_dir, exist_ok=True)
-
-        # 🕒 Tạo tên file theo thời gian
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         file_path = os.path.join(path_dir, f"results_{timestamp}.{format}")
 
         print(f"💾 Saving results to: {file_path}")
 
         try:
+            dicts = [c.to_dict() for c in candidates]
+
             if format == "json":
                 with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(candidates, f, ensure_ascii=False, indent=4)
+                    json.dump(dicts, f, ensure_ascii=False, indent=4)
 
             elif format == "txt":
                 with open(file_path, "w", encoding="utf-8") as f:
                     for c in candidates:
-                        f.write(f"ID: {c['id']}\nCategory: {c['category']}\nScore: {c['score']:.4f}\n")
-                        f.write(f"Text: {c['content']}\n{'-'*60}\n")
+                        f.write(f"ID: {c.id}\nCategory: {c.category}\nScore: {c.score:.4f}\n")
+                        f.write(f"Text: {c.content}\n{'-'*60}\n")
 
             elif format == "csv":
                 with open(file_path, "w", newline="", encoding="utf-8") as f:
                     writer = csv.DictWriter(f, fieldnames=["id", "category", "score", "content"])
                     writer.writeheader()
-                    writer.writerows(candidates)
+                    writer.writerows(dicts)
 
             print("✅ Save completed successfully.")
-            return file_path  # trả về đường dẫn để tiện dùng sau này
-
+            return file_path
         except Exception as e:
             print(f"❌ Error saving file: {e}")
             return None

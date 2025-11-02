@@ -5,6 +5,7 @@ from typing import List, Dict, Any, Optional, Literal
 import numpy as np
 from base import BaseRetriever
 from config import QDRANT_API_KEY, QDRANT_URL, EMBEDDING_MODEL_NAME
+from retriever.base import Candidate
 
 class MMRRetriever(BaseRetriever):
     """
@@ -98,7 +99,7 @@ class MMRRetriever(BaseRetriever):
 
     def _generate_similarity_matrices(
         self, 
-        candidates: List[Dict[str, Any]],
+        candidates: List[Candidate],
     ) -> np.ndarray:
 
         if not candidates:
@@ -107,13 +108,13 @@ class MMRRetriever(BaseRetriever):
         candidate_embeddings = []
         scores_with_query = []
         for candidate in candidates:
-            emb = candidate.get('embedding', None)
+            emb = candidate.embedding
             if emb:
                 candidate_embeddings.append(np.array(emb))
             else:
                 candidate_embeddings.append(np.zeros(self.vector_size))
 
-            score = candidate.get('score', None)
+            score = candidate.score
             if score:
                 scores_with_query.append(np.array(score))
             else:
