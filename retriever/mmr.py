@@ -3,7 +3,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from typing import List, Dict, Any, Optional, Literal
 import numpy as np
-from base import BaseRetriever
+from retriever.base import BaseRetriever
 from config import QDRANT_API_KEY, QDRANT_URL, EMBEDDING_MODEL_NAME
 from retriever.base import Candidate
 

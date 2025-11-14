@@ -26,10 +26,6 @@ class TopKRetriever(BaseRetriever):
         results = self._raw_vector_search(user_query, limit=limit)
         return results[:limit]
 
-
-
-
-
 # Usage example:
 """
 # Traditional Top-K retrieval
