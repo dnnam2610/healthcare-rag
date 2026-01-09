@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-18T08:18:16.758605",
+  "metrics": {
+    "accuracy": 0.9891,
+    "macro_avg": {
+      "precision": 0.989,
+      "recall": 0.9895,
+      "f1": 0.9892
+    },
+    "weighted_avg": {
+      "precision": 0.9894,
+      "recall": 0.9891,
+      "f1": 0.9892
+    },
+    "per_class": {
+      "medical": {
+        "tp": 1866,
+        "fp": 42,
+        "tn": 1958,
+        "fn": 0,
+        "precision": 0.978,
+        "recall": 1.0,
+        "f1": 0.9889,
+        "support": 1866
+      },
+      "non_medical": {
+        "tp": 1958,
+        "fp": 0,
+        "tn": 1866,
+        "fn": 42,
+        "precision": 1.0,
+        "recall": 0.979,
+        "f1": 0.9894,
+        "support": 2000
+      }
+    },
+    "total_samples": 3866,
+    "correct_predictions": 3824,
+    "incorrect_predictions": 42
+  },
+  "configuration": {
+    "batch_size": 8
+  }
+}

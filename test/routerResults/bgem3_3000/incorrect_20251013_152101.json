@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-10-13T15:21:01.230045",
+  "total_incorrect": 7,
+  "samples": [
+    {
+      "query": "Cảm ơn vì thông tin! Tôi nghĩ tôi sẽ thử leo núi Batur Sunrise Trekking. Bạn có biết chuyến đi thường bắt đầu lúc mấy giờ không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng hợp bài viết “Cách giải phóng dung lượng ổ đĩa trên Windows 10”: https://www.howtogeek.com/125923/7-ways-to-free-up-hard-disk-space-on-windows-10/",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Các yêu cầu y tế để lấy bằng lái xe hạng 1 ở Canada là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi nên đi tuyến tàu điện ngầm nào để đến Ga Grand Central và lịch trình như thế nào? (Lưu ý: Đây là câu hỏi tiếp theo có liên quan đến câu trả lời trước đó về việc đi tàu điện ngầm như một lựa chọn cho phương tiện giao thông công cộng.)",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Viết lại câu sau một cách ngắn gọn hơn: “Con chó mà tôi nhìn thấy trong công viên, nó có màu đen.”: Con chó mà tôi nhìn thấy trong công viên, nó có màu đen.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số sản phẩm điều trị ung thư phổ biến nhất của Novartis là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn đã thông tin. Nghe có vẻ như sẽ có rất nhiều hậu quả tiềm ẩn nếu Donald Trump quyết định tái tranh cử tổng thống vào năm 2024. Bạn nghĩ có khả năng ông ấy sẽ tranh cử hay còn quá sớm để nói chắc chắn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}

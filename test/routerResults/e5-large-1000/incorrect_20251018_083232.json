@@ -1,0 +1,840 @@
+{
+  "timestamp": "2025-10-18T08:32:32.118306",
+  "total_incorrect": 139,
+  "samples": [
+    {
+      "query": "Mục đích sứ mệnh của Luna 9 là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ứng dụng phổ biến được viết bằng Java là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ cụ thể về cách Apple đã cách mạng hóa công nghệ là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Thị phần của Shenma, Sogou và Haosou ở Trung Quốc là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những hiện vật nào được phát hiện trên đảo Nikumaroro có thể liên quan đến sự biến mất của Earhart?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Châu lục nhỏ nhất trên thế giới là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Kể tên một công viên giải trí nổi tiếng ở Châu Âu",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Niềm tin vững chắc vào công lý của Jane Eyre đóng vai trò như thế nào trong cuốn sách?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ về các hệ thống CMS và ERP phổ biến được sử dụng ngày nay là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ về máy bay chiến đấu hiện đại kết hợp những công nghệ mới này là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số truyền thống thế tục phổ biến gắn liền với lễ Giáng sinh là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có bao nhiêu sửa đổi trong Tuyên ngôn Nhân quyền?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số chủ đề chính được khám phá xuyên suốt cuốn sách là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số loài chim khác trong họ Phoenicopteridae là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Thành phố nào có dân số lớn thứ ba ở Hoa Kỳ?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quốc gia nào chịu nhiều thương vong nhất trong Thế chiến thứ hai?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cầu vồng điển hình rộng bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bruce Springsteen đã viết những bài hát nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nguồn gốc của từ \"reverie\" là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quy tắc từ chối khác với quy tắc cho phép trong tường lửa như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Kiến trúc của các tòa nhà chọc trời hiện đại đã phát triển như thế nào theo thời gian?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có bao nhiêu hành khách đi lại trên mạng lưới Đường sắt Ấn Độ hàng ngày?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Lý do đằng sau những cải cách xã hội của Augustus Caesar nhằm thúc đẩy hôn nhân và nuôi dạy con cái là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số mối đe dọa đối với quần thể bò rừng ngoài việc săn bắn là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số thương hiệu nổi tiếng được biết đến với công nghệ điện thoại thông minh của họ là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những tổ chức nào khác đã ủng hộ các cuộc biểu tình của cộng đồng người Hawaii bản địa chống lại việc xây dựng kính viễn vọng trên đỉnh Mauna Kea?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Thủ đô của Nga là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số địa điểm mà cáo và gấu đã cùng nhau đến thăm là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cá voi là loại động vật gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng thống Mỹ hiện tại tên là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "K2 cao bao nhiêu so với đỉnh Everest?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của diễn viên đóng vai Freddy Krueger trong bộ phim gốc là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nền văn hóa nào khác thực hành khái niệm Ubuntu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nghệ sĩ nào khác ngoài Velazquez có tác phẩm được trưng bày tại Museo del Prado?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Số liệu dân số của Hoa Kỳ và Ấn Độ là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sự phản kháng chế độ nô lệ đã phát triển như thế nào theo thời gian?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số thương hiệu sản xuất ô tô số tự động là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ về phim sử dụng hiệu ứng hình ảnh tiên tiến nhờ tiến bộ công nghệ là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những biểu tượng nào khác thường được sử dụng trong thơ ngoài hoa hồng?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số vật liệu phổ biến được sử dụng trong đồ nội thất hiện đại là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Các quốc gia tạo nên G7 là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số chiến lược giải quyết xung đột khác ngoài đàm phán hợp tác là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Phần tốn thời gian nhất của việc sản xuất một quảng cáo truyền hình là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Hệ thống giao thông hyperloop khác với tàu hỏa và máy bay như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những hãng hàng không nào cung cấp chuyến bay từ New York tới California?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một trang web thương mại điện tử là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "OAS đã thực hiện những sáng kiến ​​gì để giải quyết các vi phạm nhân quyền ở các nước thành viên?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "NASA sử dụng trí tuệ nhân tạo và học máy để khám phá không gian như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Internet đã tác động đến giáo dục như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số nguồn cung cấp cụ thể đã cạn kiệt trong chuyến hành trình của Columbus là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Các yêu cầu y tế để lấy bằng lái xe hạng 1 ở Canada là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số mối đe dọa đối với sự tồn tại của khỉ đột trong môi trường sống tự nhiên của chúng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những điểm tham quan nào khác gần Tháp Luân Đôn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bàn tính đã được sử dụng làm công cụ đếm bao lâu rồi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chiếc tivi đầu tiên được phát minh khi nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số huyền thoại hoặc niềm tin phổ biến xung quanh sét ở các nền văn hóa khác nhau là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những bức tranh nào khác mà Salvador Dali đã tạo ra được coi là mang tính biểu tượng?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Giải thưởng Nobel được trao đặc biệt cho Marie Curie vì mục đích gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sự khác biệt giữa cơ sở dữ liệu SQL và NoSQL là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ngôn ngữ lập trình phổ biến sử dụng phép nối là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ai đạo diễn \"Vua bọ cạp\"?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Thung lũng Chết đo nhiệt độ thường xuyên như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số hợp kim phổ biến của Sắt được sử dụng trong sản xuất là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Kể tên hai bộ phim kinh điển của thập niên 1950?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cộng đồng quốc tế đang làm gì để giúp Thái Lan đạt được dân chủ?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Alex và Sarah đã học được gì trong thời gian ở khu định cư ma thuật?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đồ đạc của John và Mill mà bộ tộc thù địch muốn cướp là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của tàu vũ trụ đầu tiên chạm tới bề mặt Mặt trăng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số hoạt động phổ biến để làm ở Grand Canyon ngoài việc chỉ tham quan là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Vai trò của Nữ hoàng Trái tim trong câu chuyện là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có lục địa nào lớn hơn Châu Phi không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Socrates và Aristotle có bất đồng lớn nào trong niềm tin triết học của họ không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng số hành khách và thành viên phi hành đoàn trên tàu Titanic là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ về các tỉnh hoặc vùng lãnh thổ ở Canada có mức thuế doanh nghiệp cao hơn mức liên bang là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số loại cơ sở dữ liệu phổ biến được sử dụng trong các ngành công nghiệp là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số loại năng lượng tái tạo chính mà các quốc gia này đang sử dụng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ví dụ về các môn thể thao phi thương mại hóa mà người hâm mộ có thể ủng hộ ở cấp địa phương là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số thành tựu chính sách đối ngoại quan trọng trong nhiệm kỳ tổng thống của George HW Bush là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "U2 đã phát hành những bài hát nổi tiếng nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quốc ca Pháp có tên là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ai đặt ra thuật ngữ \"vượt qua Rubicon\"?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số điểm tham quan hàng đầu ở Barcelona là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Mục đích chính của Facebook khi ra mắt là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chức năng của ty thể trong cơ thể con người là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có ngôn ngữ Bantu nào khác được sử dụng rộng rãi ở Châu Phi ngoài tiếng Swahili không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những quốc gia nào khác đã được xem xét để đưa vào G7?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ngôn ngữ chính được sử dụng ở Warsaw là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quá trình kết hợp kiểu phông chữ và màu sắc đã chọn vào thiết kế logo là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "John đã thực hiện những loại dự án cụ thể nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ai được mệnh danh là cha đẻ của vật lý hiện đại?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có yếu tố nội tại nào góp phần vào sự suy tàn của Đế chế La Mã không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của loại tiền điện tử có vốn hóa thị trường cao nhất là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ai được coi là “Cha đẻ của Hiến pháp”?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chủ đề hoặc thông điệp chung của bài thơ “Ngủ” của John Keats là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số kênh phổ biến nhất về nội dung giáo dục trên YouTube là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số lợi ích của chọn lọc tự nhiên về sự tồn tại và tiến hóa của loài là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số cửa khẩu biên giới Hoa Kỳ-Canada chính khác dành cho thương mại là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Giá trị hoặc điểm của một hiệp sĩ trong cờ vua là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số khác biệt giữa NAFTA và USMCA là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Biểu đồ Gantt là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Donald Trump đã tham gia vào những loại hình kinh doanh nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số đặc điểm tính cách phổ biến thường gắn liền với các nhân vật phản diện trong truyện là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Charlize Theron đã đóng vai chính trong những bộ phim nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Còn tiền tip ở khách sạn thì sao? Tôi nên boa bao nhiêu cho nhân viên dọn phòng trong thời gian tôi lưu trú?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Vua sư tử đã giành được giải thưởng gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ý nghĩa lịch sử của Tuyên ngôn Độc lập?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Anh em nhà Wright là ai?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của cuốn sách đầu tiên trong bộ sách là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nguồn gốc của từ \"bí ẩn\" là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Dân số của Ấn Độ và Trung Quốc so với Mỹ là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ước tính có bao nhiêu con Kỳ giông khổng lồ Trung Quốc còn sót lại trong tự nhiên?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nhân vật nào trong số này được Alice yêu thích?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Loại gia vị nào sau đây được sử dụng phổ biến nhất trong ẩm thực Rajasthani?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Mục đích của việc sử dụng CSS kết hợp với HTML là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tài nguyên thiên nhiên quan trọng được tìm thấy ở Úc là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Manuel Neuer từng chơi cho đội nào trước khi gia nhập Bayern Munich?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sự khác biệt giữa hệ thống quản lý nội dung và hệ thống hoạch định nguồn lực doanh nghiệp là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số nhà lãnh đạo khác đã đấu tranh cho dân quyền là ai?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số đóng góp đáng chú ý khác của Ada Lovelace cho lĩnh vực khoa học máy tính là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cây là loại cấu trúc dữ liệu nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số thách thức trong việc giải phương trình sóng Schrodinger là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ai khác nổi tiếng trong thời kỳ Phục hưng Ý?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của hai người đầu tiên lên tới đỉnh Everest là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nghệ sĩ nào được biết đến là người đổi mới thể loại nhạc jazz?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ngoài ngành công nghệ, còn có một số ngành nào khác đóng góp cho nền kinh tế California?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tòa nhà chọc trời nào nổi bật nhất về mặt thiết kế?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số quốc gia khác có tỷ lệ tiêu thụ cà phê cao là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số chiến lược và chiến thuật chính được người Athen và người Sparta sử dụng trong Chiến tranh Peloponnesian là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số tác phẩm cụ thể thể hiện phong cách viết của Chomsky là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sự khác biệt giữa ẩn dụ và nhân cách hóa là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sạc dự phòng AUKEY USB-C 30000mAh có được bảo hành không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số địa điểm tốt để ngắm lá mùa thu ở New York là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số lễ hội hoặc sự kiện phổ biến mà người dân ở Hoa Kỳ tham dự là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số nhược điểm tiềm tàng của việc sử dụng công nghệ trong ngành công nghiệp âm nhạc là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Trận Gettysburg là chiến thắng của Liên minh hay Liên minh?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của ba đại dương là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số diễn viên nổi tiếng từng đóng vai Hamlet là ai?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tốc độ tối đa mà Airbus A380 có thể đạt được là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quy mô dân số của Bồ Đào Nha là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}

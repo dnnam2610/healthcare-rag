@@ -1,0 +1,258 @@
+{
+  "timestamp": "2025-10-18T08:18:16.833453",
+  "total_incorrect": 42,
+  "samples": [
+    {
+      "query": "Đại bàng hói có di cư vào những thời điểm nhất định trong năm không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bruce Springsteen đã viết những bài hát nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn vì thông tin! Tôi nghĩ tôi sẽ thử leo núi Batur Sunrise Trekking. Bạn có biết chuyến đi thường bắt đầu lúc mấy giờ không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi có thể thay thế quinoa bằng gạo lứt trong công thức salad gà và quinoa không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tên của diễn viên đóng vai Freddy Krueger trong bộ phim gốc là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nền văn hóa nào khác thực hành khái niệm Ubuntu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nghệ sĩ nào khác ngoài Velazquez có tác phẩm được trưng bày tại Museo del Prado?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đánh giá dịch vụ khách hàng do khách sạn nơi bạn lưu trú cung cấp theo thang điểm từ 1 đến 5 (1 là tệ nhất và 5 là tốt nhất): Kỳ nghỉ của tôi ở khách sạn Westwood thật tuyệt. Các nhân viên rất thân thiện và hữu ích. Các phòng luôn được giữ sạch sẽ. Tôi cũng được ăn sáng miễn phí.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tổng hợp bài viết “Cách giải phóng dung lượng ổ đĩa trên Windows 10”: https://www.howtogeek.com/125923/7-ways-to-free-up-hard-disk-space-on-windows-10/",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi có thể sử dụng bột cà ri đỏ thay vì bột cà ri trong công thức Súp cà ri dừa không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể giải thích vai trò của hệ tuần hoàn trong cơ thể con người?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Các yêu cầu y tế để lấy bằng lái xe hạng 1 ở Canada là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những điểm tham quan nào khác gần Tháp Luân Đôn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chiếc tivi đầu tiên được phát minh khi nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn khuyên dùng loại nước sốt nào cho món gà nướng này?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Làm cách nào tôi có thể tạo ảnh chụp mắt của con sâu? Tôi có cần thiết bị đặc biệt nào không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Làm thế nào một người có thể duy trì động lực tập thể dục ngay cả khi họ bắt đầu cảm thấy mệt mỏi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đồ đạc của John và Mill mà bộ tộc thù địch muốn cướp là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi nên đi tuyến tàu điện ngầm nào để đến Ga Grand Central và lịch trình như thế nào? (Lưu ý: Đây là câu hỏi tiếp theo có liên quan đến câu trả lời trước đó về việc đi tàu điện ngầm như một lựa chọn cho phương tiện giao thông công cộng.)",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể cho tôi biết loại trái cây nào trong bộ có hàm lượng vitamin C cao nhất không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "U2 đã phát hành những bài hát nổi tiếng nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quốc ca Pháp có tên là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nếu trạng thái của người nhận DACA hết hạn, họ có thể gia hạn không? Nếu vậy, họ sẽ thực hiện điều đó như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Mục đích chính của Facebook khi ra mắt là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Chức năng của ty thể trong cơ thể con người là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ngôn ngữ chính được sử dụng ở Warsaw là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "John đã thực hiện những loại dự án cụ thể nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tôi thích cách đầu bếp bánh ngọt kết hợp thiên nhiên vào những chiếc bánh ngọt của mình! Tiệm bánh còn mở hay đã đóng cửa rồi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cơ thể chuyển hóa carbohydrate như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số sản phẩm điều trị ung thư phổ biến nhất của Novartis là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Charlize Theron đã đóng vai chính trong những bộ phim nào khác?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Còn tiền tip ở khách sạn thì sao? Tôi nên boa bao nhiêu cho nhân viên dọn phòng trong thời gian tôi lưu trú?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn đã thông tin. Nghe có vẻ như sẽ có rất nhiều hậu quả tiềm ẩn nếu Donald Trump quyết định tái tranh cử tổng thống vào năm 2024. Bạn nghĩ có khả năng ông ấy sẽ tranh cử hay còn quá sớm để nói chắc chắn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Vua sư tử đã giành được giải thưởng gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn về những lời khuyên về máy làm sạch bằng hơi nước, bạn có thể cho tôi biết phụ kiện nào quan trọng nhất cần có khi làm sạch thảm và thảm trải sàn không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có nhất thiết phải luôn mang xe đến đại lý để bảo dưỡng hay tôi có thể mang xe đến bất kỳ thợ cơ khí nào không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những nghệ sĩ nào được biết đến là người đổi mới thể loại nhạc jazz?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sạc dự phòng AUKEY USB-C 30000mAh có được bảo hành không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Hoa lan có được coi là cây lâu năm không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Quy mô dân số của Bồ Đào Nha là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Ngoài cá hồi và cá da trơn còn có loài cá nào đẻ trứng?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có biết món ăn mặn nào có nguyên liệu là quả việt quất không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "timestamp": "2025-10-17T22:12:25.348131",
+  "total_incorrect": 35,
+  "samples": [
+    {
+      "query": "Xin chào bác sĩ, có nên sư dụng thực phẩm chức năng tỏi đen+trứng vịt có bộ y tế chứng nhận an toàn ko? Sử dung tối đa trong bao lâu, trường hợp nào ko nên uống\nCảm ơn bs",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "Cho tôi hỏi, Cơ chế tác dụng của thuốc maxitrol như nào vậy ạ?",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "giới tính nữ. 25t\nbị ra mâu âm đạo như hành kinh\nngoài ra k coz triệu chứng gì bất thường",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "bin vô sinh có chữa được không ạ . nếu chữa được thì dùng biện pháp như thế nào ạ????",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "Sao của mình kết luận Bác Sĩ ko có vậy ?",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "Cho em hỏi: Sốc phản vệ và dị ứng có giống nhau không? Mong bác sĩ giải đáp cho em.",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "Ý nghĩa chỉ số CEA và CA 19-9 là gì thưa bác sĩ? Kết quả chỉ số CEA là 1,5; chỉ số CA 19-9 là 17 có ý nghĩa gì?",
+      "true_label": "medical",
+      "predicted_label": "non_medical",
+      "correct": false
+    },
+    {
+      "query": "Lực điện từ có phải là lực mạnh nhất trong bốn lực cơ bản không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những giải pháp này có hiệu quả như thế nào trong việc giảm ô nhiễm không khí?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tìm trung vị của các số sau: 3, 7, 12, 14, 17",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có thể nào một quốc gia có lạm phát thấp mà nền kinh tế vẫn đang gặp khó khăn?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số ý tưởng bữa ăn có nguồn gốc thực vật dễ dàng, giá cả phải chăng dành cho những người mới làm quen với lối sống này là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Hạn chót nộp bài dự thi nghệ thuật là khi nào? #ArtsContest #SubmissionDeadline #TimeFrame",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Đó là tốt để biết. Bạn có thể cho tôi biết Acer Aspire 5 nặng bao nhiêu không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tính thể tích hình lập phương biết độ dài cạnh: 4 cm",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số lựa chọn thay thế sữa dựa trên thực vật là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể cho tôi biết thêm về các loại phân bón tốt nhất để sử dụng cho các loại cây khác nhau không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Làm thế nào một người có thể duy trì động lực tập thể dục ngay cả khi họ bắt đầu cảm thấy mệt mỏi?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Bạn có thể giới thiệu một loại sữa chua khác để làm sinh tố cho những người không dung nạp lactose được không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tính diện tích hình chữ nhật có chiều dài 5cm, chiều rộng 8cm.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Những loại rau nào tốt nhất để ăn trong mùa hè?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Tạo một báo cáo tóm tắt phù hợp về thông tin được cung cấp: Lạm phát ở Mỹ tăng nhẹ từ 2,9% trong tháng 3 lên 3,6% trong tháng 5.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Sóng âm được truyền đi như thế nào?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Viết lại câu “Đó là một đêm tối tăm và giông bão”",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Có bao nhiêu từ trong câu \"Anh ấy giúp đỡ người nghèo mỗi ngày\"?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số sản phẩm điều trị ung thư phổ biến nhất của Novartis là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Wow, đó là những sự tương tự tuyệt vời! Tôi chưa bao giờ nghĩ về nó theo cách đó. Cảm ơn rất nhiều vì sự giúp đỡ của bạn.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Nêu 3 lợi ích của việc ăn chuối.",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Cảm ơn bạn về những lời khuyên về máy làm sạch bằng hơi nước, bạn có thể cho tôi biết phụ kiện nào quan trọng nhất cần có khi làm sạch thảm và thảm trải sàn không?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số lợi ích của việc tập yoga để giảm căng thẳng là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Còn 4 cốc đến ounce thì sao?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Phân loại câu sau: \"Gần đây xe của tôi gây rắc rối cho tôi.\"",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Một số cách để giảm tiếng ồn ở những nơi đó là gì?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Thời lượng pin của Acer Aspire 5 sau một lần sạc đầy là bao nhiêu?",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    },
+    {
+      "query": "Viết dòng cuối cùng của câu chuyện: Cô nhìn lên bầu trời, những ngôi sao đang tỏa sáng",
+      "true_label": "non_medical",
+      "predicted_label": "medical",
+      "correct": false
+    }
+  ]
+}
