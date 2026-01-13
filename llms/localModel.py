@@ -161,7 +161,7 @@ class LocalLLMs:
                 # messages = [
                 #     {"role": "user", "content": prompt}
                 # ]
-                import torch 
+
                 messages = prompt
                 text = self.tokenizer.apply_chat_template(
                     messages,
