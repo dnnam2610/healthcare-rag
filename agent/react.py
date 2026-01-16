@@ -74,6 +74,8 @@ def loop(
     initial_candidates: List[Candidate],
     max_iterations: int = 5
 ):
+    
+    is_sufficient = False
     old_candidates = list(initial_candidates)
 
     observation = format_observation(old_candidates)
@@ -101,14 +103,16 @@ Question:
 
         # Nếu không có Action → coi như Answer cuối
         if not action:
+            is_sufficient = True
             print("\n✅ No action found → assume sufficient.")
             break
 
         tool_name, tool_arg = action[0]
         tool_name = tool_name.lower().strip()
-
+        
         # Agent quyết định đủ thông tin
         if tool_name == "end_loop":
+            is_sufficient = True
             print("\n🛑 Agent decided information is sufficient.")
             break
 
@@ -130,17 +134,19 @@ Question:
             observation = format_observation(old_candidates)
 
             next_prompt = f"""
-Observation:
-{observation}
+                        Observation:
+                        {observation}
 
-Question:
-{query}
-"""
+                        Question:
+                        {query}
+                    """
         else:
             print("⚠️ Unknown tool")
             break
 
     print("\n===== LOOP FINISHED =====")
+    
+    return old_candidates, is_sufficient
 
 
 if __name__ == '__main__':
@@ -163,7 +169,7 @@ if __name__ == '__main__':
         print(f"[{c.id}] {c.content[:80]}...")
     print("=========================")
 
-    loop(
+    candidates = loop(
         agent=agent,
         query=query,
         initial_candidates=initial_candidates,

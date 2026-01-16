@@ -4,12 +4,12 @@ from typing import Any, Optional
 class EmbeddingConfig(BaseModel):
     name: str = Field(..., description="The name of the SentenceTransformer model")
     device: str = Field('cpu', description="Device to run embedding model: cpu | cuda | mps")
-    @validator('name')
+    @validator('name', allow_reuse=True)
     def check_model_name(cls, value):
         if not isinstance(value, str) or not value.strip():
             raise ValueError("Model name must be a non-empty string")
         return value
-    @validator("device")
+    @validator("device", allow_reuse=True)
     def check_device(cls, value):
         allowed = {"cpu", "cuda", "mps"}
         value = value.lower()

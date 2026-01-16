@@ -11,13 +11,13 @@ class HybridRetriever(BaseRetriever):
             self.raw_retriver.search(query, limit=50),
             descent=True
         )
-        self.raw_retriver.save(candidates=raw_results, path_dir='_raw')
+        self.raw_retriver.save(query=query,candidates=raw_results, path_dir='_raw')
 
         vector_results = self._rank(
             self.vector_retriever.search(query, limit=50),
             descent=True
         )
-        self.vector_retriever.save(candidates=vector_results, path_dir='_vector')
+        self.vector_retriever.save(query=query, candidates=vector_results, path_dir='_vector')
         
         final_results = self._compute_RRF(
             [raw_results, vector_results],

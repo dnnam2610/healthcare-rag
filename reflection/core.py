@@ -4,7 +4,7 @@ class Reflection():
     def __init__(self, llm):
         self.llm = llm
 
-    def _concat_and_format_texts(self, data):
+    def _concat_and_format_texts(self, data)->str:
         concatenatedTexts = []
         for entry in data:
             role = entry.get('role', '')
@@ -30,7 +30,10 @@ class Reflection():
         }
 
         completion = self.llm.generate_content([higherLevelSummariesPrompt])
-    
+        if not completion:
+            print('[LOG][Warning]The reflection return None')
+            return historyString
+        
         return completion
     
 if __name__ == '__main__':

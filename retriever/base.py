@@ -72,19 +72,25 @@ class BaseRetriever(ABC):
             print("-" * 80)
     
     @staticmethod
-    def save(candidates: List[Candidate], path_dir: str, format: str = "json") -> Optional[str]:
+    def save(
+        query: str,
+        candidates: List[Candidate],
+        path_dir: str,
+        format: str = "json"
+    ) -> Optional[str]:
         """
         Save search results to file.
-        
+
         Args:
-            candidates: List of Candidate objects to save
+            query: Original search query
+            candidates: List of Candidate objects
             path_dir: Directory to save results
-            format: Output format (json, txt, csv)
-            
+            format: Output format (json, txt)
+
         Returns:
             Path to saved file or None if failed
         """
-        supported_formats = {"json", "txt", "csv"}
+        supported_formats = {"json", "txt"}
         format = format.lower()
 
         if format not in supported_formats:
@@ -98,29 +104,34 @@ class BaseRetriever(ABC):
         print(f"💾 Saving {len(candidates)} results to: {file_path}")
 
         try:
-            dicts = [c.to_dict() for c in candidates]
-
             if format == "json":
+                data = {
+                    "query": query,
+                    "num_candidates": len(candidates),
+                    "timestamp": timestamp,
+                    "results": [c.to_dict() for c in candidates]
+                }
+
                 with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(dicts, f, ensure_ascii=False, indent=4)
+                    json.dump(data, f, ensure_ascii=False, indent=4)
 
             elif format == "txt":
                 with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(f"Query: {query}\n")
+                    f.write(f"Timestamp: {timestamp}\n")
+                    f.write(f"Total results: {len(candidates)}\n")
+                    f.write("=" * 80 + "\n\n")
+
                     for i, c in enumerate(candidates, 1):
                         f.write(f"[{i}] ID: {c.id}\n")
                         f.write(f"Category: {c.category}\n")
                         f.write(f"Score: {c.score:.4f}\n")
                         f.write(f"Content: {c.content}\n")
-                        f.write(f"{'-'*80}\n\n")
-
-            elif format == "csv":
-                with open(file_path, "w", newline="", encoding="utf-8") as f:
-                    writer = csv.DictWriter(f, fieldnames=["id", "category", "score", "content"])
-                    writer.writeheader()
-                    writer.writerows(dicts)
+                        f.write("-" * 80 + "\n\n")
 
             print("✅ Save completed successfully.")
             return file_path
+
         except Exception as e:
             print(f"❌ Error saving file: {e}")
             return None

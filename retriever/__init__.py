@@ -3,3 +3,4 @@ from retriever.kneedle import KneedleRetriever
 from retriever.mmr import MMRRetriever
 from retriever.bm25 import BM25Retriever
 from retriever.hybrid import HybridRetriever
+from retriever.base import Candidate

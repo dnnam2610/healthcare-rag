@@ -11,7 +11,7 @@ from retriever.base import BaseVectorRetriever
 class TopKRetriever(BaseVectorRetriever):
     """Traditional Top-K retrieval strategy"""
     
-    def search(self, user_query: str, limit: int = 4) -> List[Dict[str, Any]]:
+    def search(self, query: str, limit: int = 4) -> List[Dict[str, Any]]:
         """
         Perform traditional top-k vector search.
         
@@ -23,7 +23,7 @@ class TopKRetriever(BaseVectorRetriever):
             List[Dict]: Top-k matching documents
         """
         print(f"🔍 TopK Retrieval: Fetching top {limit} results")
-        results = self._raw_vector_search(user_query, limit=limit)
+        results = self._raw_vector_search(query, limit=limit)
         return results[:limit]
 
 # Usage example:
