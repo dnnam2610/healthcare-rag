@@ -209,13 +209,7 @@ Response style requirements for Thought (every Thought must include these 3 part
 - Extracted facts: 1–3 bullet points quoting/paraphrasing only what is in those documents (<= 25 words per quote).
 - Sufficiency/confidence: High/Medium/Low + short reason.
 
-Additional rules:
-- If numerical data (e.g., dosages, incidences) are not present in Observation, write: "No quantitative data in current docs."
-- If documents contradict each other, explicitly state the contradiction and call retrieve_more_information unless the question can be answered by stating the contradiction.
-- Do NOT stop early just because you *think* you know the answer; require the sufficiency criteria above.
-- Do NOT use phrasing like "I know from prior knowledge"; only reference Observation.
-
-Example (một ví dụ duy nhất — tránh tạo bias '2 lần'):
+Example:
 Question:
   - "Ai có nguy cơ mắc hội chứng Eisenmenger và tỉ lệ mắc là bao nhiêu?"
 
