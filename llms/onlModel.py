@@ -1,5 +1,5 @@
 from typing import List, Dict, Literal, Optional
-import google.generai as genai
+import google.generativeai as genai
 import openai
 import requests
 import re
