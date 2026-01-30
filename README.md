@@ -19,8 +19,17 @@ Tại thư mục gốc của project, chạy lệnh:
 ```bash
 conda env create -f environment.yml
 ```
+## Bước 2: Bạn cần thêm các api key cần thiết vào biến môi trường (file .env)
 
-## Bước 2: Chạy app
+```bash
+QDRANT_API_KEY=...
+GROQ_API_KEY=...
+OPENAI_API_KEY=...
+```
+Sử dụng OPENAI_API_KEY khi cần chạy test
+
+
+## Bước 3: Chạy app
 
 ```bash
 streamlit run app.py
