@@ -22,10 +22,11 @@ conda env create -f environment.yml
 ## Bước 2: Bạn cần thêm các api key cần thiết vào biến môi trường (file .env)
 
 ```bash
-QDRANT_API_KEY=...
+QDRANT_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.yEUcdzP5fUfezmLK07kMVaDwrS5cBrD_Z5MTg1s7k14
 GROQ_API_KEY=...
 OPENAI_API_KEY=...
 ```
+API KEY của qdrant chỉ có hiệu lực trong thời gian ngắn, vui lòng liên hệ nếu cần quyền truy cập
 Sử dụng OPENAI_API_KEY khi cần chạy test
 
 
